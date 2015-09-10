@@ -1,6 +1,6 @@
 ﻿namespace PomodoroTimer
 {
-    partial class Timer
+    partial class PomodoroTimerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,11 +30,14 @@
         {
             this.btnStartToggle = new System.Windows.Forms.Button();
             this.btnResetButton = new System.Windows.Forms.Button();
+            this.lblTimer = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnStartToggle
             // 
-            this.btnStartToggle.Location = new System.Drawing.Point(12, 201);
+            this.btnStartToggle.Location = new System.Drawing.Point(3, 124);
             this.btnStartToggle.Name = "btnStartToggle";
             this.btnStartToggle.Size = new System.Drawing.Size(149, 46);
             this.btnStartToggle.TabIndex = 0;
@@ -44,22 +47,46 @@
             // 
             // btnResetButton
             // 
-            this.btnResetButton.Location = new System.Drawing.Point(167, 201);
+            this.btnResetButton.Location = new System.Drawing.Point(156, 124);
             this.btnResetButton.Name = "btnResetButton";
             this.btnResetButton.Size = new System.Drawing.Size(149, 46);
             this.btnResetButton.TabIndex = 1;
             this.btnResetButton.Text = "Reset Timer";
             this.btnResetButton.UseVisualStyleBackColor = true;
             // 
-            // Timer
+            // lblTimer
+            // 
+            this.lblTimer.AutoSize = true;
+            this.lblTimer.Font = new System.Drawing.Font("Calibri", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(101, 31);
+            this.lblTimer.Name = "lblTimer";
+            this.lblTimer.Size = new System.Drawing.Size(113, 49);
+            this.lblTimer.TabIndex = 2;
+            this.lblTimer.Text = "25:00";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblTimer);
+            this.panel1.Controls.Add(this.btnResetButton);
+            this.panel1.Controls.Add(this.btnStartToggle);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(308, 184);
+            this.panel1.TabIndex = 3;
+            // 
+            // PomodoroTimerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 259);
-            this.Controls.Add(this.btnResetButton);
-            this.Controls.Add(this.btnStartToggle);
-            this.Name = "Timer";
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ClientSize = new System.Drawing.Size(332, 209);
+            this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(348, 248);
+            this.MinimumSize = new System.Drawing.Size(348, 248);
+            this.Name = "PomodoroTimerForm";
             this.Text = "Pomodoro Timer";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -68,6 +95,8 @@
 
         private System.Windows.Forms.Button btnStartToggle;
         private System.Windows.Forms.Button btnResetButton;
+        private System.Windows.Forms.Label lblTimer;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

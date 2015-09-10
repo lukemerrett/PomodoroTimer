@@ -16,7 +16,7 @@ namespace PomodoroTimer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Timer());
+            Application.Run(new PomodoroTimerForm());
         }
     }
 }
