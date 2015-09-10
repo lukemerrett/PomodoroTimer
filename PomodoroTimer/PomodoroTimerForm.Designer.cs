@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PomodoroTimerForm));
             this.btnStartToggle = new System.Windows.Forms.Button();
             this.btnResetButton = new System.Windows.Forms.Button();
             this.lblTimer = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(332, 209);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(348, 248);
             this.MinimumSize = new System.Drawing.Size(348, 248);
             this.Name = "PomodoroTimerForm";
