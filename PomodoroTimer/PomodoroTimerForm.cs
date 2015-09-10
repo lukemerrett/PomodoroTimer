@@ -43,6 +43,11 @@ namespace PomodoroTimer
             }
         }
 
+        private void btnResetButton_Click(object sender, EventArgs e)
+        {
+            ResetTimer();
+        }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             ElapsedTime = ElapsedTime.Add(TimeSpan.FromSeconds(1));
@@ -65,6 +70,6 @@ namespace PomodoroTimer
 
             btnStartToggle.Text = "Start Timer";
             _timerStarted = false; 
-        }
+        }        
     }
 }

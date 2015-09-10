@@ -53,6 +53,7 @@
             this.btnResetButton.TabIndex = 1;
             this.btnResetButton.Text = "Reset Timer";
             this.btnResetButton.UseVisualStyleBackColor = true;
+            this.btnResetButton.Click += new System.EventHandler(this.btnResetButton_Click);
             // 
             // lblTimer
             // 
